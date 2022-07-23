@@ -1,0 +1,17 @@
+
+\
+java:S1854"ARemove this useless assignment to local variable "numeroPequeno".(ŞğõÁüÿÿÿÿ
+[
+java:S1854
+"@Remove this useless assignment to local variable "valorPequeno".(Ó¥Úçüÿÿÿÿ
+V
+java:S1854	"@Remove this useless assignment to local variable "numeroGrande".(ªÖŞã
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ôçôºüÿÿÿÿ
+G
+java:S1481	"1Remove this unused "numeroGrande" local variable.(ªÖŞã
+L
+java:S1481
+"1Remove this unused "valorPequeno" local variable.(Ó¥Úçüÿÿÿÿ
+T
+java:S1481"2Remove this unused "numeroPequeno" local variable.(ŞğõÁüÿÿÿÿ8½é½¢0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ó›¬œøÿÿÿÿ8ˆÚç½¢0
