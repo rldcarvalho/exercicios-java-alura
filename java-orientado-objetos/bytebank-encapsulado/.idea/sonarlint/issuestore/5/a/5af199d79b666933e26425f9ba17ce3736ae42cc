@@ -1,0 +1,10 @@
+
+\
+java:S1854":Remove this useless assignment to local variable "conta2".(‚­°åýÿÿÿÿ8‹¬ é¢0
+[
+java:S1854"9Remove this useless assignment to local variable "conta".(ã ¹²ûÿÿÿÿ8à“¢é¢0
+L
+java:S1481"*Remove this unused "conta" local variable.(ã ¹²ûÿÿÿÿ8á“¢é¢0
+M
+java:S1481"+Remove this unused "conta2" local variable.(‚­°åýÿÿÿÿ8¸Š¡é¢0
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8Õï²é¢0
