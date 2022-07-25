@@ -1,15 +1,17 @@
 package principal;
 
-public class Gerente extends Funcionario implements Autenticavel {
+public class Administrador extends Funcionario implements Autenticavel {
 
     private AutenticacaoUtil autenticador;
 
-    public Gerente(){
+    private Administrador(){
         this.autenticador = new AutenticacaoUtil();
     }
+    @Override
     public double getBonificacao() {
-        return super.getSalario();
+        return 50;
     }
+
 
     @Override
     public void setSenha(int senha) {
