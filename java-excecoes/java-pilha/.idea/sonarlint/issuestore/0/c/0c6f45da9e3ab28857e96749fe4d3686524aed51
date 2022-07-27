@@ -1,0 +1,17 @@
+
+X
+java:S3518"CMake sure this expression can't be zero before doing this division.(ƒ®íR
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬¹Ù­ûÿÿÿÿ
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(Àø©Ã
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ˆù €ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’´õÉúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ¬€
+J
+java:S1854"5Remove this useless assignment to local variable "a".(ƒ®íR
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÌÛ’›üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+;
+java:S1481"&Remove this unused "a" local variable.(ƒ®íR
+Q	java:S125"<This block of commented-out lines of code should be removed.(©ÙÏ¹
+N	java:S106"9Replace this use of System.out or System.err by a logger.(§îàÀ
