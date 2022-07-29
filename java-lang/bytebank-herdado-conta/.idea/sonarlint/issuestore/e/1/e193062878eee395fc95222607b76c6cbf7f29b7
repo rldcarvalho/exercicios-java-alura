@@ -1,0 +1,14 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(áŸ±ƒøÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¿îô
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ê‰Ì¶ıÿÿÿÿ8ÙÈˆ¤0
+V	java:S125"<This block of commented-out lines of code should be removed.(¬Ù¼Áüÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(•İ™Îüÿÿÿÿ8™åÎˆ¤0
+V	java:S125"<This block of commented-out lines of code should be removed.(Ä‰Ø§üÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Œ€Áõ
+V	java:S125"<This block of commented-out lines of code should be removed.(™¨àÛúÿÿÿÿ
+Q	java:S125 "<This block of commented-out lines of code should be removed.(òóãó
+Q	java:S125$"<This block of commented-out lines of code should be removed.(åâ™µ
+Q	java:S125&"<This block of commented-out lines of code should be removed.(ÚƒÚ
+O
+java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8ÊŞĞˆ¤0
