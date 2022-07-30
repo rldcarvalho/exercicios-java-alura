@@ -1,0 +1,26 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰ˆÉ÷üÿÿÿÿ
+T
+java:S1854"9Remove this useless assignment to local variable "valor".(ï¥½Éüÿÿÿÿ
+T
+java:S1854"9Remove this useless assignment to local variable "idade".(°˜ì¢øÿÿÿÿ
+T
+java:S1854	"9Remove this useless assignment to local variable "nomes".(œ±“Œûÿÿÿÿ
+U
+java:S1854":Remove this useless assignment to local variable "idades".(¼ºæûøÿÿÿÿ
+F
+java:S1481"+Remove this unused "idades" local variable.(¼ºæûøÿÿÿÿ
+E
+java:S1481	"*Remove this unused "nomes" local variable.(œ±“Œûÿÿÿÿ
+E
+java:S1481"*Remove this unused "idade" local variable.(°˜ì¢øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(šÍòÐøÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Öå–4
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¥µÿ“ûÿÿÿÿ8Ó´ê»¤0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(†Ã«Í8õÿö»¤0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ƒëÚ’üÿÿÿÿ8äŸù»¤0
+E
+java:S1481"*Remove this unused "valor" local variable.(ï¥½Éüÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÙºÍÄøÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(™¢Â¹8Ž€ú»¤0

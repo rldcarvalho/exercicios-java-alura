@@ -1,0 +1,8 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(“¦æÖ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(ß¦Šı
+V	java:S125&"<This block of commented-out lines of code should be removed.(Ò£õ­úÿÿÿÿ
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8ˆşãÛ¤0
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

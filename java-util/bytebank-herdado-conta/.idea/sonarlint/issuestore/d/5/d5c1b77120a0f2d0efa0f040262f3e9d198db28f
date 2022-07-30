@@ -1,0 +1,11 @@
+
+C
+java:S1604/"(Make this anonymous inner class a lambda(Ó“şÿÿÿÿ
+C
+java:S1604:"(Make this anonymous inner class a lambda(…­Šúÿÿÿÿ
+S
+java:S1854:"8Remove this useless assignment to local variable "comp".(…­Šúÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(áñÁ·
+D
+java:S1481:")Remove this unused "comp" local variable.(…­Šúÿÿÿÿ
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(ÑÆ£Í

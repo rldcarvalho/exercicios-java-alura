@@ -1,0 +1,15 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ş¿Æşÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ñë‘
+N	java:S106"9Replace this use of System.out or System.err by a logger.(•‚æí
+O
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(ĞìÖ‘
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ó‰úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬–Åšÿÿÿÿÿ
+\
+java:S4719":Replace charset name argument with StandardCharsets.UTF_16(íí—ÿÿÿÿÿ8ªºÇÛ¤0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ó‰úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Öè—Šùÿÿÿÿ
+Y
+java:S4719"<Replace charset name argument with StandardCharsets.US_ASCII(³çÕÙ8şÖÇÛ¤0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ó‰úÿÿÿÿ

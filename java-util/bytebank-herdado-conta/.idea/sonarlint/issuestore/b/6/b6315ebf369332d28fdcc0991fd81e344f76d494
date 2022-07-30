@@ -1,0 +1,11 @@
+
+S
+java:S18543"8Remove this useless assignment to local variable "comp".(Ò‚é‚ùÿÿÿÿ
+N	java:S106."9Replace this use of System.out or System.err by a logger.(áñÁ·
+D
+java:S14813")Remove this unused "comp" local variable.(Ò‚é‚ùÿÿÿÿ
+P
+java:S1611:"3Remove the parentheses around the "conta" parameter(áı¸8½ÑÁ¿¤0
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(áı¸
+S
+java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ
