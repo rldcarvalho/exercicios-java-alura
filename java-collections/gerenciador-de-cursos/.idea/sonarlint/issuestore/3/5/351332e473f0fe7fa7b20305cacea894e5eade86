@@ -1,0 +1,17 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(§¹‘˜ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¦Ãêúùÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(»¸¾øÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(÷ıÏÒ
+H
+java:S1602(",Remove useless curly braces around statement(òØ8·›ùÛ¥0
+\
+java:S1612("@Replace this lambda with method reference 'System.out::println'.(òØ8·›ùÛ¥0
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(öûíß
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(ßàñ×
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(¿äò£ùÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(–šÂÛ
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(‹Ü€ÿÿÿÿÿ8§ÙóÛ¥0
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(¿ÏËœüÿÿÿÿ8¹›ùÛ¥0
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(ïŒÑ¢8şÍúÛ¥0
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(­ÕºŞıÿÿÿÿ8©§ûÛ¥0
