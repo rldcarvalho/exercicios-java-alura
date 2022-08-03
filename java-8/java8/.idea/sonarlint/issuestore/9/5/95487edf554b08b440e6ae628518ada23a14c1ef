@@ -1,0 +1,33 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(×–âÓıÿÿÿÿ
+~
+java:S1192%"cDefine a constant instead of duplicating this literal "----------------------------------" 5 times.(Õ÷õúÿÿÿÿ
+`
+java:S1854K"CRemove this useless assignment to local variable "cursosFiltrados".(øŒÀ 8Ú¿Ù¦0
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(àéÎ„øÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(¥ÉûÂùÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+X
+java:S1612/"=Replace this lambda with method reference 'Curso::getAlunos'.(ÿ‰¥¯ıÿÿÿÿ
+[
+java:S16120"@Replace this lambda with method reference 'System.out::println'.(´Ø÷‰üÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(´Ø÷‰üÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+S
+java:S16126"=Replace this lambda with method reference 'Curso::getAlunos'.(ãè½ó
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(‚¨Ö§
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(ÖÅÌÀúÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(ç£ØÅùÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+S
+java:S1612D"=Replace this lambda with method reference 'Curso::getAlunos'.(ô´©Ö
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(„±‡½
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+h
+java:S6204M"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
+Q
+java:S1481K"4Remove this unused "cursosFiltrados" local variable.(øŒÀ 8à¿Ù¦0
+Q
+java:S1128"4Remove this unused import 'org.w3c.dom.ls.LSOutput'.(Ò½¾Š8Ò•×¦0

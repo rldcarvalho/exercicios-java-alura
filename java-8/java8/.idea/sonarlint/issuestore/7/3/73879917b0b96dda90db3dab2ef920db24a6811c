@@ -1,0 +1,13 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÉíÔæ
+]	java:S125"<This block of commented-out lines of code should be removed.(«¬şÿÿÿÿ8×£Ãş¥0
+]	java:S125"<This block of commented-out lines of code should be removed.(ØÅÍùÿÿÿÿ8ú„Âş¥0
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ğ÷š
+V	java:S125"<This block of commented-out lines of code should be removed.(ûÜ†Ñûÿÿÿÿ
+V	java:S125""<This block of commented-out lines of code should be removed.(ÍÛ²øÿÿÿÿ
+]	java:S125%"<This block of commented-out lines of code should be removed.( Ûüıÿÿÿÿ8Â…Êş¥0
+T	java:S106'"9Replace this use of System.out or System.err by a logger.(â’ß~8£ïÉş¥0
+V	java:S125-"<This block of commented-out lines of code should be removed.(Ïıœ§úÿÿÿÿ
+V	java:S1256"<This block of commented-out lines of code should be removed.(§Ôü‚ıÿÿÿÿ
+Z
+java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ8†ÅÊş¥0
