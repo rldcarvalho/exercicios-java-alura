@@ -4,42 +4,12 @@ import java.math.BigDecimal;
 
 public class Terceirizado {
 
-    private String nome;
-    private String cpf;
-    private Cargo cargo;
-    private BigDecimal salario;
+    private DadosPessoais dadosPessoais;
     private String empresa;
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public Cargo getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(Cargo cargo) {
-        this.cargo = cargo;
-    }
-
-    public BigDecimal getSalario() {
-        return salario;
-    }
-
-    public void setSalario(BigDecimal salario) {
-        this.salario = salario;
+    public Terceirizado(String nome, String cpf, Cargo cargo, BigDecimal salario, String empresa) {
+        this.dadosPessoais = new DadosPessoais(nome, cpf, cargo, salario);
+        this.empresa = empresa;
     }
 
     public String getEmpresa() {
@@ -48,5 +18,21 @@ public class Terceirizado {
 
     public void setEmpresa(String empresa) {
         this.empresa = empresa;
+    }
+
+    public String getNome() {
+        return dadosPessoais.getNome();
+    }
+
+    public String getCpf() {
+        return dadosPessoais.getCpf();
+    }
+
+    public Cargo getCargo() {
+        return dadosPessoais.getCargo();
+    }
+
+    public BigDecimal getSalario() {
+        return dadosPessoais.getSalario();
     }
 }
