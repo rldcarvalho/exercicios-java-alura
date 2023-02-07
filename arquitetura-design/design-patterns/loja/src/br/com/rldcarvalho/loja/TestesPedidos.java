@@ -1,11 +1,9 @@
 package br.com.rldcarvalho.loja;
 
-import br.com.rldcarvalho.loja.orcamento.Orcamento;
 import br.com.rldcarvalho.loja.pedido.GeraPedido;
-import br.com.rldcarvalho.loja.pedido.Pedido;
+import br.com.rldcarvalho.loja.pedido.GeraPedidoHandler;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 public class TestesPedidos {
 
@@ -16,6 +14,7 @@ public class TestesPedidos {
         int quantidade = Integer.parseInt(args[2]);
 
         GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidade);
-        gerador.excecuta();
+        GeraPedidoHandler handler = new GeraPedidoHandler(/*dependencias*/);
+        handler.execute(gerador);
     }
 }
