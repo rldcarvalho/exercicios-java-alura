@@ -1,14 +1,18 @@
 package br.com.rldcarvalho.loja.pedido;
 
 import br.com.rldcarvalho.loja.orcamento.Orcamento;
-import br.com.rldcarvalho.loja.pedido.acao.EnviarEmailPedido;
-import br.com.rldcarvalho.loja.pedido.acao.SalvarPedidoNoBancoDeDados;
+import br.com.rldcarvalho.loja.pedido.acao.AcaoAposGerarPedido;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class GeraPedidoHandler {
 
-    //construtor com injeção de dependências: repository, service, etc.
+    private List<AcaoAposGerarPedido> acoes;
+
+    public GeraPedidoHandler(List<AcaoAposGerarPedido> acoes) {
+        this.acoes = acoes;
+    }
 
     public void execute(GeraPedido dados){
 
@@ -16,10 +20,7 @@ public class GeraPedidoHandler {
 
         Pedido pedido = new Pedido(dados.getCliente(), LocalDateTime.now(), orcamento);
 
-        EnviarEmailPedido email = new EnviarEmailPedido();
-        SalvarPedidoNoBancoDeDados salvar = new SalvarPedidoNoBancoDeDados();
+        acoes.forEach(a -> a.executarAcao(pedido));
 
-        email.executar(pedido);
-        salvar.executar(pedido);
     }
 }
