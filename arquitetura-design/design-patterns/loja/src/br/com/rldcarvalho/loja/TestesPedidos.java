@@ -1,6 +1,7 @@
 package br.com.rldcarvalho.loja;
 
 import br.com.rldcarvalho.loja.orcamento.Orcamento;
+import br.com.rldcarvalho.loja.pedido.GeraPedido;
 import br.com.rldcarvalho.loja.pedido.Pedido;
 
 import java.math.BigDecimal;
@@ -10,13 +11,11 @@ public class TestesPedidos {
 
     public static void main(String[] args) {
 
-        Orcamento orcamento = new Orcamento(new BigDecimal("600.00"), 4);
-        String cliente = "João da Silva";
-        LocalDateTime data = LocalDateTime.now();
+        String cliente = args[0];
+        BigDecimal valorOrcamento = new BigDecimal(args[1]);
+        int quantidade = Integer.parseInt(args[2]);
 
-        Pedido pedido = new Pedido(cliente, data, orcamento);
-
-        System.out.println("Salvar pedido no banco de dados");
-        System.out.println("Enviar email com dados do novo pedido");
+        GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidade);
+        gerador.excecuta();
     }
 }
