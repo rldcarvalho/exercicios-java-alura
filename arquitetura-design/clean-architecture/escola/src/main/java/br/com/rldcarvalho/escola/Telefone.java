@@ -7,7 +7,8 @@ public class Telefone {
 
     public Telefone(String ddd, String numero) {
 
-        if (!ddd.matches("\\d{2}") || !numero.matches("^\\d{8}(?:\\d{1})?$")){
+        if ((ddd == null) || (numero == null) ||
+                !ddd.matches("\\d{2}") || !numero.matches("^\\d{8}(\\d)?$")){
             throw new IllegalArgumentException("Numero de telefone inválido");
         }
 
