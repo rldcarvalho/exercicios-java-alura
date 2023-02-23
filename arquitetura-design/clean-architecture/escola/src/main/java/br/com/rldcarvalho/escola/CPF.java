@@ -12,7 +12,10 @@ public class CPF {
     }
 
     private boolean isValido(String numero) {
-
         return numero.matches("^\\d{3}.\\d{3}.\\d{3}-\\d{2}$");
+    }
+
+    public String getNumero() {
+        return numero;
     }
 }
