@@ -21,7 +21,7 @@ class TelefoneTest {
         assertThrows(IllegalArgumentException.class, () -> new Telefone( "333", "33333333"));
         assertThrows(IllegalArgumentException.class, () -> new Telefone( "3", "33333333"));
     }
-    
+
     @Test
     void deveriaPermitirCriarTelefoneComDDDENumeroValidos(){
         String ddd = "11";
