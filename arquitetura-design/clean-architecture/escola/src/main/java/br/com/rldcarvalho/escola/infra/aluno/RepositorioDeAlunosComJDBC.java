@@ -102,7 +102,7 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 
                 alunos.add(aluno);
             }
-            
+
             return alunos;
         }catch (SQLException e){
             throw new RuntimeException(e);
