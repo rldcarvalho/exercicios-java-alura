@@ -2,7 +2,7 @@ package br.com.rldcarvalho.escola.gamificacao.infra.selo;
 
 import br.com.rldcarvalho.escola.gamificacao.dominio.selo.RepositorioDeSelos;
 import br.com.rldcarvalho.escola.gamificacao.dominio.selo.Selo;
-import br.com.rldcarvalho.escola.academico.dominio.aluno.CPF;
+import br.com.rldcarvalho.escola.shared.dominio.CPF;
 
 import java.util.ArrayList;
 import java.util.List;

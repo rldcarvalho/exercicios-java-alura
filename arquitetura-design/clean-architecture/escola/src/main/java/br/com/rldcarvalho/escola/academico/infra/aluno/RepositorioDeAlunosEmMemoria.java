@@ -3,7 +3,7 @@ package br.com.rldcarvalho.escola.academico.infra.aluno;
 import br.com.rldcarvalho.escola.academico.dominio.aluno.AlunoNaoEncontrado;
 import br.com.rldcarvalho.escola.academico.dominio.aluno.RepositorioDeAlunos;
 import br.com.rldcarvalho.escola.academico.dominio.aluno.Aluno;
-import br.com.rldcarvalho.escola.academico.dominio.aluno.CPF;
+import br.com.rldcarvalho.escola.shared.dominio.CPF;
 
 import java.util.ArrayList;
 import java.util.List;

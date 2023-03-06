@@ -1,5 +1,6 @@
 package br.com.rldcarvalho.escola.academico.dominio.aluno;
 
+import br.com.rldcarvalho.escola.shared.dominio.CPF;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
