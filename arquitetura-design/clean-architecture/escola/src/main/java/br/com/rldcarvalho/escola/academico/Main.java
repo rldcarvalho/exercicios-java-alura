@@ -2,7 +2,7 @@ package br.com.rldcarvalho.escola.academico;
 
 import br.com.rldcarvalho.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
 import br.com.rldcarvalho.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.rldcarvalho.escola.academico.dominio.PublicadorDeEventos;
+import br.com.rldcarvalho.escola.shared.dominio.evento.PublicadorDeEventos;
 import br.com.rldcarvalho.escola.academico.dominio.aluno.LogAlunoMatriculado;
 import br.com.rldcarvalho.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 

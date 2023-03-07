@@ -1,6 +1,6 @@
 package br.com.rldcarvalho.escola.academico.aplicacao.aluno.matricular;
 
-import br.com.rldcarvalho.escola.academico.dominio.PublicadorDeEventos;
+import br.com.rldcarvalho.escola.shared.dominio.evento.PublicadorDeEventos;
 import br.com.rldcarvalho.escola.academico.dominio.aluno.Aluno;
 import br.com.rldcarvalho.escola.academico.dominio.aluno.AlunoMatriculado;
 import br.com.rldcarvalho.escola.academico.dominio.aluno.RepositorioDeAlunos;
