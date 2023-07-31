@@ -19,17 +19,16 @@ public class Main {
                     if (realizaCompra(leitura, cartao)) {
                         System.out.println("Compra realizada!");
                         System.out.println("Saldo do cartão: " + cartao.getSaldo());
-                        System.out.println("Digite 0 para sair ou 1 para continuar: ");
-                        controle = leitura.next();
                     } else {
                         System.out.println("Saldo insuficiente!");
-                        finalizaCompra(cartao);
+                        break;
                     }
                 } else {
                     System.out.println("Número inválido!");
-                    System.out.println("Digite 0 para sair ou 1 para continuar: ");
-                    controle = leitura.next();
                 }
+
+                System.out.println("Digite 0 para sair ou 1 para continuar: ");
+                controle = leitura.next();
             }
             finalizaCompra(cartao);
         } catch (Exception e) {
