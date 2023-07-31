@@ -7,33 +7,34 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner leitura = new Scanner(System.in);
+        try(Scanner leitura = new Scanner(System.in);) {
+            System.out.println("Digite o limite do cartão: ");
 
-        System.out.println("Digite o limite do cartão: ");
+            CartaoDeCredito cartao = new CartaoDeCredito(leitura.nextDouble());
 
-        CartaoDeCredito cartao = new CartaoDeCredito(leitura.nextDouble());
+            String controle = "1";
 
-        String controle = "1";
-
-        while (!Objects.equals(controle, "0")) {
-            if (Objects.equals(controle, "1")) {
-                if (realizaCompra(leitura, cartao)) {
-                    System.out.println("Compra realizada!");
-                    System.out.println("Saldo do cartão: " + cartao.getSaldo());
+            while (!Objects.equals(controle, "0")) {
+                if (Objects.equals(controle, "1")) {
+                    if (realizaCompra(leitura, cartao)) {
+                        System.out.println("Compra realizada!");
+                        System.out.println("Saldo do cartão: " + cartao.getSaldo());
+                        System.out.println("Digite 0 para sair ou 1 para continuar: ");
+                        controle = leitura.next();
+                    } else {
+                        System.out.println("Saldo insuficiente!");
+                        finalizaCompra(cartao);
+                    }
+                } else {
+                    System.out.println("Número inválido!");
                     System.out.println("Digite 0 para sair ou 1 para continuar: ");
                     controle = leitura.next();
-                } else {
-                    System.out.println("Saldo insuficiente!");
-                    finalizaCompra(cartao);
                 }
-            } else {
-                System.out.println("Número inválido!");
-                System.out.println("Digite 0 para sair ou 1 para continuar: ");
-                controle = leitura.next();
             }
+            finalizaCompra(cartao);
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
         }
-        finalizaCompra(cartao);
-
     }
 
     private static boolean realizaCompra(Scanner leitura, CartaoDeCredito cartao) {
