@@ -1,6 +1,8 @@
 package br.com.rldcarvalho.model;
 
-public class Movie extends Title {
+import br.com.rldcarvalho.interfaces.Classifiable;
+
+public class Movie extends Title implements Classifiable {
 
     private String director;
     public Movie(String name, int releaseYear, int lengthInMinutes) {
@@ -10,4 +12,8 @@ public class Movie extends Title {
         this.lengthInMinutes = lengthInMinutes;
     }
 
+    @Override
+    public int getRating() {
+        return (int) getAverageRating() / 2;
+    }
 }

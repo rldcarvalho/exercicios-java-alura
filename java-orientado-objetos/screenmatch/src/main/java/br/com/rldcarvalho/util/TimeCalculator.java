@@ -1,4 +1,4 @@
-package br.com.rldcarvalho;
+package br.com.rldcarvalho.util;
 
 import br.com.rldcarvalho.model.Title;
 

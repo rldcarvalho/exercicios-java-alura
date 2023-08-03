@@ -1,11 +1,14 @@
 package br.com.rldcarvalho.model;
 
-public class Serie extends Title {
+import br.com.rldcarvalho.interfaces.Classifiable;
+
+public class Serie extends Title implements Classifiable {
 
     private int seasons;
     private int episodesPerSeason;
     private int minutesPerEpisode;
     private boolean active;
+    private int totalViews;
 
     public int getSeasons() {
         return seasons;
@@ -42,5 +45,10 @@ public class Serie extends Title {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    @Override
+    public int getRating() {
+        return totalViews > 400 ? 4 : 2;
     }
 }
