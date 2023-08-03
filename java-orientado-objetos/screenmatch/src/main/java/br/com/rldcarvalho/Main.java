@@ -2,6 +2,7 @@ package br.com.rldcarvalho;
 
 import br.com.rldcarvalho.model.Movie;
 import br.com.rldcarvalho.model.Serie;
+import br.com.rldcarvalho.util.RecomendationFilter;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,6 +25,9 @@ public class Main {
         lost.setEpisodesPerSeason(10);
         lost.setMinutesPerEpisode(50);
         System.out.println("Duração para maratonar a série: " + lost.getLengthInMinutes());
+
+        RecomendationFilter filter = new RecomendationFilter();
+        filter.filter(myMovie);
 
     }
 }
