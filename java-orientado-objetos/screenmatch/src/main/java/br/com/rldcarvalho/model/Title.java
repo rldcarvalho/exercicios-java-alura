@@ -12,6 +12,12 @@ public class Title {
     protected int totalRating;
     protected int lengthInMinutes;
 
+    public Title(TitleOmdb myTitleOmdb) {
+        this.name = myTitleOmdb.title();
+        this.releaseYear = Integer.valueOf(myTitleOmdb.year());
+        this.lengthInMinutes = Integer.valueOf(myTitleOmdb.runtime().substring(0,2));
+    }
+
     public void rate(double score){
         this.ratingSum += score;
         this.totalRating++;

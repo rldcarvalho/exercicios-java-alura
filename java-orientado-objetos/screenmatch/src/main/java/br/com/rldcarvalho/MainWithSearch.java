@@ -1,7 +1,10 @@
 package br.com.rldcarvalho;
 
 import br.com.rldcarvalho.model.Title;
+import br.com.rldcarvalho.model.TitleOmdb;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 import java.net.URI;
@@ -27,8 +30,9 @@ public class MainWithSearch {
         String json = response.body();;
         System.out.println(json);
 
-        Gson gson = new Gson();
-        Title myTitle = gson.fromJson(json, Title.class);
+        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+        TitleOmdb myTitleOmdb = gson.fromJson(json, TitleOmdb.class);
+        Title myTitle = new Title(myTitleOmdb);
         System.out.println(myTitle);
 
 
