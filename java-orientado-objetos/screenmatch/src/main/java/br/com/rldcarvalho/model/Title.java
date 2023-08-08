@@ -1,7 +1,11 @@
 package br.com.rldcarvalho.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Title {
+    @SerializedName("Title")
     protected String name;
+    @SerializedName("Year")
     protected int releaseYear;
     protected boolean inThePlan;
     protected double ratingSum;
@@ -68,5 +72,13 @@ public class Title {
 
     public void setLengthInMinutes(int lengthInMinutes) {
         this.lengthInMinutes = lengthInMinutes;
+    }
+
+    @Override
+    public String toString() {
+        return "Title{" +
+                "name='" + name + '\'' +
+                ", releaseYear=" + releaseYear +
+                '}';
     }
 }
