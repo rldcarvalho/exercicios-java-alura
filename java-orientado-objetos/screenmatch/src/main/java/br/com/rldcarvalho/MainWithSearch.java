@@ -21,19 +21,27 @@ public class MainWithSearch {
 
         String URL = "https://www.omdbapi.com/?t=" + search + "&apikey=b9a327db";
 
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(URL))
-                .build();
-        HttpResponse<String> response = client
-                .send(request, HttpResponse.BodyHandlers.ofString());
-        String json = response.body();;
-        System.out.println(json);
+        try {
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(URL))
+                    .build();
+            HttpResponse<String> response = client
+                    .send(request, HttpResponse.BodyHandlers.ofString());
+            String json = response.body();;
+            System.out.println(json);
 
-        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-        TitleOmdb myTitleOmdb = gson.fromJson(json, TitleOmdb.class);
-        Title myTitle = new Title(myTitleOmdb);
-        System.out.println(myTitle);
+            Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+            TitleOmdb myTitleOmdb = gson.fromJson(json, TitleOmdb.class);
+            Title myTitle = new Title(myTitleOmdb);
+            System.out.println(myTitle);
+        } catch (NumberFormatException e){
+            System.out.println("Erro: " + e.getMessage());
+        } catch (IllegalArgumentException e) {
+            System.out.println("Algum erro de argumento na busca, verifique o endereço");
+        } catch (Exception e) {
+            System.out.println("Aconteceu algo, não sei o que");
+        }
 
 
 
