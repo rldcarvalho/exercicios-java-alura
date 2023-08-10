@@ -1,5 +1,6 @@
 package br.com.rldcarvalho;
 
+import br.com.rldcarvalho.exception.YearConversionErrorException;
 import br.com.rldcarvalho.model.Title;
 import br.com.rldcarvalho.model.TitleOmdb;
 import com.google.gson.FieldNamingPolicy;
@@ -19,7 +20,7 @@ public class MainWithSearch {
         System.out.println("Digite o filme para a busca: ");
         String search = reader.nextLine();
 
-        String URL = "https://www.omdbapi.com/?t=" + search + "&apikey=b9a327db";
+        String URL = "https://www.omdbapi.com/?t=" + search.replace(" ", "+") + "&apikey=b9a327db";
 
         try {
             HttpClient client = HttpClient.newHttpClient();
@@ -39,8 +40,8 @@ public class MainWithSearch {
             System.out.println("Erro: " + e.getMessage());
         } catch (IllegalArgumentException e) {
             System.out.println("Algum erro de argumento na busca, verifique o endereço");
-        } catch (Exception e) {
-            System.out.println("Aconteceu algo, não sei o que");
+        } catch (YearConversionErrorException e) {
+            System.out.println(e.getMessage());
         }
 
 

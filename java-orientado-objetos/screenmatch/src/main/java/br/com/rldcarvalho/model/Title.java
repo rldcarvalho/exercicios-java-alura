@@ -1,19 +1,21 @@
 package br.com.rldcarvalho.model;
 
-import com.google.gson.annotations.SerializedName;
+import br.com.rldcarvalho.exception.YearConversionErrorException;
 
 public class Title {
-    @SerializedName("Title")
     protected String name;
-    @SerializedName("Year")
     protected int releaseYear;
     protected boolean inThePlan;
     protected double ratingSum;
     protected int totalRating;
     protected int lengthInMinutes;
 
+    public Title(){}
     public Title(TitleOmdb myTitleOmdb) {
         this.name = myTitleOmdb.title();
+        if(myTitleOmdb.year().length() > 4){
+            throw new YearConversionErrorException("Não consegui converter o ano porque tem mais de quatro caracteres");
+        }
         this.releaseYear = Integer.valueOf(myTitleOmdb.year());
         this.lengthInMinutes = Integer.valueOf(myTitleOmdb.runtime().substring(0,2));
     }
