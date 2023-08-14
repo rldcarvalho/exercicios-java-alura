@@ -1,7 +1,8 @@
 package br.com.rldcarvalho;
 
 import br.com.rldcarvalho.client.ViaCepClient;
-import br.com.rldcarvalho.util.CepJsonWriter;
+import br.com.rldcarvalho.model.Address;
+import br.com.rldcarvalho.util.AddressJsonWriter;
 
 import java.util.Scanner;
 
@@ -14,10 +15,10 @@ public class Main {
 
         ViaCepClient client = new ViaCepClient();
 
-        String json = client.getBody(cep);
+        Address myAddress = client.getAddress(cep);
 
-        CepJsonWriter writer = new CepJsonWriter();
-        writer.write(json);
+        AddressJsonWriter writer = new AddressJsonWriter();
+        writer.write(myAddress);
 
     }
 }

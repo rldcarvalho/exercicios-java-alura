@@ -1,5 +1,8 @@
 package br.com.rldcarvalho.client;
 
+import br.com.rldcarvalho.model.Address;
+import com.google.gson.Gson;
+
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -7,7 +10,7 @@ import java.net.http.HttpResponse;
 
 public class ViaCepClient {
 
-    public String getBody(String cep){
+    public Address getAddress(String cep){
         String URL = "https://viacep.com.br/ws/" + cep + "/json/";
         String json = "";
 
@@ -20,9 +23,9 @@ public class ViaCepClient {
                     .send(request, HttpResponse.BodyHandlers.ofString());
             json = response.body();
         } catch (Exception e){
-            System.out.println("Erro: " + e.getMessage());
+            throw new RuntimeException("Não foi possível obter endereço a partir desse cep");
         }
-        return json;
+        return new Gson().fromJson(json, Address.class);
     }
 
 
