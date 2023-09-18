@@ -26,3 +26,5 @@ replay_pid*
 /java-lang/bytebank-herdado-conta/doc/
 microservicos/alura-ms/
 .idea/
+
+*node_modules/
